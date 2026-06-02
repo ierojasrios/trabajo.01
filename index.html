@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Ejemplo</title>
+
+    <style>
+        /*en esta seccion estoy haciendo uso de los selectpres de tipo clase*/
+        .color-rojo {
+            color: red;
+        }
+        .fuente {
+            font: size 50px;
+        }
+        /*aqui aplicamos el selector de tipo nombre o etiqueta*/
+        span{
+            background:green;
+        }
+        h1{
+            background:red ;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>hola alumnitos <b>intelgentes</b></p>
-    
+    <!--en esta linea de codigo estoy aplicando estios de tipo linea por que en la misma
+    etiqueta usando un atributo aplica los estilos-->
+    <p style="color: blueviolet;font-size: 40px;
+    font-weight: 600;font-family: sans-serif;"> Hola alumnitos
+    inteligentes </p>
+
+    <p class="color-rojo fuente "> 
+        <span>soy span y no tengo estilo </span>
+    </p>
 </body>
 </html>
